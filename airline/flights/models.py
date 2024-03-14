@@ -21,4 +21,5 @@ class Passenger(models.Model):
     flights = models.ManyToManyField(Flight, blank=True, related_name="passengers")
 
     def __str__(self):
-        return f"{self.first} {self.last}"
+        return f"{self.firstName} {self.lastName}"
+
